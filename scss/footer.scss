@@ -1,0 +1,145 @@
+$white: #FFF;
+$black: #000;
+$gray: #6b696c;
+$light-gray: #6d7893;
+$green: #50e3b3;
+$blue: #24345c;
+
+.footer {
+    background: $blue;
+    width: 100%;
+    float: left;
+    padding: 30px 0 0;
+    
+    &__wrapper {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    
+    &__col {
+        width: auto;  
+        min-height: 125px;
+        float: left;
+        padding: 0 40px;
+        border-left: 1px solid $light-gray;
+        
+        &--a {
+            padding-left: 0;
+            border-left: none;
+        }
+        
+        &--b {
+            min-width: 180px;
+        }
+        
+        &--e {
+            float: right;
+            padding-right: 0;
+            border: none;
+        }
+    }
+    
+    &__list {
+        
+    }
+    
+    &__item {
+        margin: 15px 0;
+        
+        &--inline {
+            float: left;
+            margin-left: 15px;
+        }
+        
+        &-s {
+            margin: 20px 0 0;
+            float: left;
+            clear: both;
+        }
+    }
+    
+    &__link {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        
+        &--left {
+            float: left;
+            margin-right: 60px;
+            font-weight: 300;
+        }
+        
+        &--right {
+            float: right;
+            font-weight: 300;
+        }
+    }
+    
+    &__subtitle {
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    &__icon {
+        float: left;
+        margin-right: 10px;
+    }
+    
+    &__address {
+        float: left;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    &__txt {
+        color: $white;
+        font-size: 13px;
+        font-weight: 400;
+        
+        &--s {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    
+    &__social {
+        width: 30px;
+        height: 30px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transition: 0.3s;
+        
+        &--hover {
+            opacity: 0;
+        }
+    }
+    
+    &__social:hover .footer__img {
+        opacity: 0;
+    }
+    
+    &__social:hover .footer__img--hover {
+        opacity: 1;
+    }
+    
+    &__copyrights {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin-top: 30px;
+        line-height: 55px;
+        border-top: 1px solid $light-gray;
+    }
+}

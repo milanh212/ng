@@ -11,7 +11,7 @@
     <header class="header">
         <div class="logo">
             <a class="logo__link" href="/">
-                <img class="logo__img" src="dist/img/logo.svg">
+                <img class="logo__img" src="img/logo.svg">
             </a>
         </div>
 
@@ -35,19 +35,19 @@
             <li class="header__item">
                 <a class="header__login" href="#">
                     <span class="header__login-txt">Login</span>
-                    <span class="header__login-img"><img src="dist/img/login-icon.svg"></span>
+                    <span class="header__login-img"><img src="img/login-icon.svg"></span>
                 </a>                    
             </li>
             <li class="header__item">
                 <ul class="header__language-list">
                     <li class="header__language-item">
                         <a class="header__language-link" href="#">
-                            <img class="header__language-img" src="dist/img/gb-icon.svg">
+                            <img class="header__language-img" src="img/gb-icon.svg">
                         </a>
                         <ul class="header__language-submenu">
                             <li class="header__submenu-item">
                                 <a class="header__submenu-link" href="#">
-                                    <img class="header__submenu-img" src="dist/img/gb-icon.svg">
+                                    <img class="header__submenu-img" src="img/gb-icon.svg">
                                 </a>    
                             </li>
                         </ul>
@@ -95,7 +95,7 @@
                     <a class="btn btn--l btn--blue" href="#">List your property NOW!</a>
                 </div>
                 <div class="property__right">
-                    <img class="property__img" src="dist/img/laptop.jpg">
+                    <img class="property__img" src="img/laptop.jpg">
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
                         <span class="footer__subtitle">Montenegro Novogradnja</span>
                     </li>
                     <li class="footer__item">
-                        <img class="footer__icon" src="dist/img/location-icon.svg">
+                        <img class="footer__icon" src="img/location-icon.svg">
                         <span class="footer__address">Njegoseva 10, Tivat</span>
                     </li>
                     <li class="footer__item footer__item-s">
@@ -153,26 +153,26 @@
                 <ul class="footer__list">
                     <li class="footer__item footer__item--inline">
                         <a class="footer__social" href="#">
-                            <img class="footer__img" src="dist/img/facebook-icon.svg">
-                            <img class="footer__img footer__img--hover" src="dist/img/facebook-icon-hover.svg">
+                            <img class="footer__img" src="img/facebook-icon.svg">
+                            <img class="footer__img footer__img--hover" src="img/facebook-icon-hover.svg">
                         </a>
                     </li>
                     <li class="footer__item footer__item--inline">
                         <a class="footer__social" href="#">
-                            <img class="footer__img" src="dist/img/instagram-icon.svg">
-                            <img class="footer__img footer__img--hover" src="dist/img/instagram-icon-hover.svg">
+                            <img class="footer__img" src="img/instagram-icon.svg">
+                            <img class="footer__img footer__img--hover" src="img/instagram-icon-hover.svg">
                         </a>
                     </li>
                     <li class="footer__item footer__item--inline">
                         <a class="footer__social" href="#">
-                            <img class="footer__img" src="dist/img/twitter-icon.svg">
-                            <img class="footer__img footer__img--hover" src="dist/img/twitter-icon-hover.svg">
+                            <img class="footer__img" src="img/twitter-icon.svg">
+                            <img class="footer__img footer__img--hover" src="img/twitter-icon-hover.svg">
                         </a>
                     </li>
                     <li class="footer__item footer__item--inline">
                         <a class="footer__social" href="#">
-                            <img class="footer__img" src="dist/img/linkedin-icon.svg">
-                            <img class="footer__img footer__img--hover" src="dist/img/linkedin-icon-hover.svg">
+                            <img class="footer__img" src="img/linkedin-icon.svg">
+                            <img class="footer__img footer__img--hover" src="img/linkedin-icon-hover.svg">
                         </a>
                     </li>
                 </ul>
@@ -186,7 +186,11 @@
             </div>
         </div>
     </footer>
-    <script src="dist/js/all.min.js"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/polyfill.min.js"></script>
+    <script src="js/vendor/yall.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    
     <script>
     document.addEventListener("DOMContentLoaded", function() {
       yall({
@@ -194,6 +198,7 @@
       });
     });
     </script>
+    
     <script>
         $('.hero .owl-carousel').owlCarousel({
             center: false,

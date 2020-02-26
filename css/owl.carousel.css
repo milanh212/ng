@@ -216,6 +216,7 @@
   z-index: 1;
 }
 
+
 .owl-nav  {
     position: absolute;
     left: 0;
@@ -242,3 +243,5 @@
     float: left;
     cursor: pointer;
 }
+
+.disabled {display: none;}

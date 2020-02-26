@@ -1,0 +1,135 @@
+$white: #FFF;
+$black: #000;
+$blue: #24345c;
+$light-blue: #6d7893;
+$green: #50e3b3;
+$gray: #6b696c;
+$dark-gray: #414042;
+$light-gray: #d5d5d5;
+$save: #ffcd81;
+$single: #50e3c2;
+$multi: #ffcd81;
+$unlimited: #ffb74a;
+$crossed: #474648;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn {
+    display: block;
+    float: left;
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid $green;
+    border-radius: 30px;
+    transition: 0.3s;
+    
+    &--s {
+        width: 170px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 36px;
+    }
+    
+    &--m {
+        width: 210px;
+        height: 48px;
+        line-height: 44px;
+    }
+    
+    &--l {
+        width: 290px;
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    &--plan {
+        width: 270px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 auto;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        border: none;
+    }
+    
+    &--single {
+        background: $single;
+        
+        &:hover {
+            background: darken($single, 10%);
+        }
+    }
+    
+    &--multi {
+        background: $multi;
+        
+        &:hover {
+            background: darken($multi, 10%);
+        }
+    }
+    
+    &--unlimited {
+        background: $unlimited;
+        
+        &:hover {
+            background: darken($unlimited, 10%);
+        }
+    }
+    
+    &--header {        
+        margin-left: 240px;
+        display: block;
+        opacity: 0;
+    }
+    
+    &--transparent {
+        background: transparent;
+        
+        &:hover {
+            background: rgba($black, .1);
+        }
+    }
+    
+    &--green {
+        background: $green;
+        border: none;
+        
+        &:hover {
+            background: darken($green, 10%);
+        }
+    }
+    
+    &--blue {
+        background: $blue;
+        border: none;
+        
+        &:hover {
+            background: darken($blue, 10%);
+        }
+    }
+    
+}
+
+.toggle-menu {display: none;}

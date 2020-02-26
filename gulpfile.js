@@ -4,6 +4,7 @@ var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var minify = require('gulp-minify');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
@@ -33,8 +34,8 @@ gulp.task('sass', function() {
 
 
 gulp.task('cssmerge', function() {
-    return gulp.src('css/*.css')
-    .pipe(cssnano({ zindex: false }))
+    return gulp.src(['css/general.css', 'css/header.css', 'css/main.css', 'css/footer.css', 'css/owl.carousel.css', 'css/modaal.css', 'css/responsive.css'])
+    .pipe(cssnano({zindex: false}))
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('dist/css/'))
 });
@@ -48,3 +49,16 @@ gulp.task('images', function() {
     })))
     .pipe(gulp.dest('dist/img'))
 });
+
+gulp.task('pack-js', function () {    
+  return gulp.src(['js/vendor/*.js', 'js/animation.js', 'js/main.js'])
+    .pipe(minify({
+        ext:{
+            min:'.js'
+        },
+        noSource: true
+    }))
+    .pipe(concat('script.min.js'))
+    .pipe(gulp.dest('dist/js/'));
+});
+

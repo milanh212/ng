@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+* {
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.btn {
+  display: block;
+  float: left;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  border: 2px solid #50e3b3;
+  border-radius: 30px;
+  transition: 0.3s; }
+  .btn--s {
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 36px; }
+  .btn--m {
+    width: 210px;
+    height: 48px;
+    line-height: 44px; }
+  .btn--l {
+    width: 290px;
+    height: 60px;
+    line-height: 60px; }
+  .btn--plan {
+    width: 270px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none; }
+  .btn--single {
+    background: #50e3c2; }
+    .btn--single:hover {
+      background: #24dcb3; }
+  .btn--multi {
+    background: #ffcd81; }
+    .btn--multi:hover {
+      background: #ffb94e; }
+  .btn--unlimited {
+    background: #ffb74a; }
+    .btn--unlimited:hover {
+      background: #ffa317; }
+  .btn--header {
+    margin-left: 240px;
+    display: block;
+    opacity: 0; }
+  .btn--transparent {
+    background: transparent; }
+    .btn--transparent:hover {
+      background: rgba(0, 0, 0, 0.1); }
+  .btn--green {
+    background: #50e3b3;
+    border: none; }
+    .btn--green:hover {
+      background: #24dca0; }
+  .btn--blue {
+    background: #24345c;
+    border: none; }
+    .btn--blue:hover {
+      background: #161f37; }
+
+.toggle-menu {
+  display: none; }

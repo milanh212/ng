@@ -1,9 +1,11 @@
 $white: #FFF;
 $black: #000;
-$gray: #6b696c;
-$green: #50e3b3;
 $blue: #24345c;
-
+$light-blue: #6d7893;
+$green: #50e3b3;
+$gray: #6b696c;
+$dark-gray: #414042;
+$light-gray: #d5d5d5;
 @mixin flex {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,11 @@ $blue: #24345c;
     padding: 32px 35px;
     z-index: 9;
     
+    &--blue {
+        background: $blue;
+        padding: 10px 15px;
+    }
+    
     &__list {
         float: right;
     }
@@ -27,6 +34,20 @@ $blue: #24345c;
         margin-left: 40px;
         @include flex;
     }
+    
+    &__favorites {
+        height: 48px;
+        display: block;
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    &__favorites-icon {
+        margin: 13px 10px -3px;
+        display: inline-block;
+    }
+    
     &__login {
         float: right;
         height: 48px;
@@ -100,9 +121,25 @@ $blue: #24345c;
         margin-right: 35px;
     }
     
+    &__icon {
+        margin-left: 5px;
+        transition: 0.3s;
+    }
+    
     &__link {
         color: $white;
         font-size: 18px;
         font-weight: 300;
+        transition: 0.3s;
+        
+        &:hover {
+            color: $light-blue;
+            
+            .nav__icon {
+                transform: translate3d(3px,0,0);
+            }
+        }
     }
+    
+    
 }

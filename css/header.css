@@ -3,6 +3,9 @@
   width: 100%;
   padding: 32px 35px;
   z-index: 9; }
+  .header--blue {
+    background: #24345c;
+    padding: 10px 15px; }
   .header__list {
     float: right; }
   .header__item {
@@ -12,6 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .header__favorites {
+    height: 48px;
+    display: block;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300; }
+  .header__favorites-icon {
+    margin: 13px 10px -3px;
+    display: inline-block; }
   .header__login {
     float: right;
     height: 48px; }
@@ -62,7 +74,15 @@
   .nav__item {
     float: left;
     margin-right: 35px; }
+  .nav__icon {
+    margin-left: 5px;
+    transition: 0.3s; }
   .nav__link {
     color: #FFF;
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    transition: 0.3s; }
+    .nav__link:hover {
+      color: #6d7893; }
+      .nav__link:hover .nav__icon {
+        transform: translate3d(3px, 0, 0); }
